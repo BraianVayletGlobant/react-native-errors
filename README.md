@@ -70,3 +70,54 @@ sudo gem install cocoapods
 
 ### 10. Verificar cambios de API:
 A veces, las actualizaciones de React Native introducen cambios en la API. Asegúrate de consultar las notas de la versión y actualizar tu código en consecuencia.
+
+---
+
+## ANDROID:
+
+- Dentro del fichero /android correr los siguientes comandos:
+
+```
+./gradlew clean
+./gradlew assembleRelease or ./gradlew app:assembleRelease
+./gradlew bundleRelease
+```
+
+## IOS:
+
+- Dentro del fichero /ios correr los siguientes comandos:
+
+```
+pod deintegrate
+```
+
+Si te sale el warning: CocoaPods requires your terminal to be using UTF-8 encoding. Consider adding the following to ~/.profile, tira el comando "export LANG=en_US.UTF-8" y volve a tirar el "pod deintegrate"
+
+```
+rm -rf podfile.lock
+```
+
+```
+clean cache
+```
+
+```
+pod cache clean --all
+```
+
+```
+npm cache verify
+```
+
+```
+yarn cache clean
+```
+
+```
+arch -x86_64 pod repo update
+```
+
+```
+arch -x86_64 pod install
+```
+
