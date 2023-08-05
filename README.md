@@ -97,9 +97,9 @@ Si te sale el warning: CocoaPods requires your terminal to be using UTF-8 encodi
 rm -rf podfile.lock
 ```
 
-```
-clean cache
-```
+
+- clean cache
+
 
 ```
 pod cache clean --all
